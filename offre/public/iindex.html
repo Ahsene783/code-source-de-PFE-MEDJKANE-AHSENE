@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      body::before{
+        content: '';
+        display: block;
+        height: 60px;
+      }
+    </style>
+</head>
+<body>
+
+
+  <!--navbar-->
+    <div class="navbar navbar-expand-md bg-dark navbar-dark text-white fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">VoyageGo</a>
+
+            <button class="navbar-toggler" 
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainmenu"
+            >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                 <ul class="navbar-nav ms-auto">
+                   <li class="nav-item"><a href="#Acceuil" class="nav-link">Acceuil</a></li>
+                   <li class="nav-item"><a href="Offre touristique" class="nav-link"> Offre touristique</a></li>
+                   <li class="nav-item dropdown">
+                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learn</a>
+                     <ul class="dropdown-menu">
+                       <li><a href="#learn" class="dropdown-item">learn-bootstrap</a></li>
+                       <li><a href="#next" class="dropdown-item">where to go next</a></li>
+                     </ul>
+                    </li>
+                   <li class="nav-item"><a href="#faq" class="nav-link">Offre</a></li>
+                   <li class="nav-item"><a href="#Contact" class="nav-link">Contactez nous!</a></li>
+                 </ul>
+            </div>
+        </div>    
+    </div>
+    
+
+    <!--<section class="bg-white text-dark text-center py-5 d-flex ">
+       <div class="container">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Destination</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <nav class="navbar navbar-light bg-info">
+          <div class="container-fluid">
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="destination" aria-label="Search">
+              <input class="form-control me-2" type="date" placeholder="date d'arivé" aria-label="Search">
+              <input class="form-control me-2" type="date" placeholder="date de depart" aria-label="Search">
+              <input class="form-control me-2" type="number" placeholder="Tarif" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+       </div>
+    </section>-->
+    
+
+
+    
+        
+    
+
+
+
+    
+    <!--Acceuil--->
+    <section id="hero" class="bg-white text-dark text-center tewt-sm-start py-5">
+      <div class="container">
+        <nav class="navbar navbar-light bg-info">
+          <div class="container-fluid">
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="destination" aria-label="Search">
+              <input class="form-control me-2" type="date" placeholder="date d'arivé" aria-label="Search">
+              <input class="form-control me-2" type="date" placeholder="date de depart" aria-label="Search">
+              <input class="form-control me-2" type="number" placeholder="Tarif" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+          <div class="d-sm-flex align-items-center justify-content-center">
+            <div class="py-3">
+              <h1 class="display-5">Découvrir  <span class="text-info">le monde</span></h1>
+              <p class="py-1 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aut numquam possimus esse corporis autem, tempora veniam accusamus ipsum excepturi aliquid consectetur atque reiciendis nobis quibusdam harum a ab, minima facilis exercitationem voluptatem voluptas enim itaque! Suscipit perspiciatis impedit officia?</p>
+              <button class="btn btn-info">Get Started</button>
+              
+            </div>
+            <img class=" d-none d-sm-block img-fluid w-50" src="/img/heroo-img.png" alt="">  
+          </div>
+      </div>
+    </section>
+
+    <!-- Offre touristique--->
+    <section id="New" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">
+            Offre touristique
+        </h2>
+        <div class="input-filter">
+          <input type="text" name="" id="filter" class="filter" placeholder="Enter Title" onkeyup="searchProduct()">
+        </div>
+         <div class="offrs" id="offrs"></div>
+          
+            <!--<div class="col-sm ">
+              <div class="card bg-dark text-light mb-3">
+                <img src="..." class="card-img-top" alt="...">
+                
+                <div class="h1 mt-3">
+                  <i class="bi bi-arrows-angle-contract text-info"></i>
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="card-title text-info">Destination</h4>
+                  <p class="card-text"><h1>title</h1></p>
+                  <h5>Période</h5>
+                  <h6>Tarif</h6>
+                  <h4>agence de voyage</h4>
+                  <a href="#" class="btn btn-info">Voir l'offre</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm ">
+              <div class="card bg-dark text-light mb-3">
+                <img src="https://1084634167.rsc.cdn77.org/photos/products/14988/287648689.jpg" alt="" class="card-img-top">
+                <div class="card-body text-center">
+                  <h4 class="card-title text-info">Turquie</h4>
+                  <p class="card-text">Istanbul hôtel blue gilroy 3*</p>
+                  <h5>2 jours / 1 nuit</h5>
+                  <h6>À partir de 7 500 DA</h6>
+                  <h4>Dunevoyages</h4>
+                  <a href="#" class="btn btn-info">Voir l'offre</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm ">
+              <div class="card bg-dark text-light mb-3">
+                <img src="https://picsum.photos/300/200" alt="" class="card-img-top">
+                <div class="h1 mt-3">
+                  <i class="bi bi-arrows-angle-contract"></i>
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="card-title text-info">Destination</h4>
+                  <p class="card-text"><h1>title</h1></p>
+                  <h5>Période</h5>
+                  <h6>Tarif</h6>
+                  <h4>agence de voyage</h4>
+                  <a href="#" class="btn btn-info">Voir l'offre</a>
+                </div>
+              </div>
+            </div>-->
+          </div>
+      </div>
+    </section>
+
+    <!---What to Learn-->
+    <section id="learn" class="py-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md">
+              <img src="/img/learn.svg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md py-4">
+              <h2>Learn the Basics</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam suscipit ratione cupiditate quibusdam atque autem voluptate laborum accusamus harum iste laudantium exercitationem dolorem, architecto, in, fuga saepe doloribus laboriosam! Nam?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident harum amet dignissimos quia itaque illum ratione similique? Sint, incidunt esse.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--Next-->
+    <section id="next" class="py-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-center flex-row-reverse">
+          <div class="col-md">
+            <img src="/img/next.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md py-4">
+            <h2>where to go next</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam suscipit ratione cupiditate quibusdam atque autem voluptate laborum accusamus harum iste laudantium exercitationem dolorem, architecto, in, fuga saepe doloribus laboriosam! Nam?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident harum amet dignissimos quia itaque illum ratione similique? Sint, incidunt esse.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--Questions-->
+
+  <section id="faq" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-3">
+         Questions
+      </h2>
+      <div class="accordion accordion-flush" id="bt-fq">
+         <div class="accordion-item">
+           <h5 class="accordion-header" id="question-one">
+              <button class="accordion-button collapsed" type="button" 
+                      data-bs-toggle="collapse" data-bs-target="#answer-one">
+                 Question One
+              </button>
+           </h5>
+           <div class="accordion-collapse collapse px-4 py-3" id="answer-one" data-bs-parent="#bt-fq">
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, ut? Dolor, veniam!
+           </div>
+         </div>
+
+         <div class="accordion-item">
+          <h5 class="accordion-header" id="question-two">
+             <button class="accordion-button collapsed" type="button" 
+                     data-bs-toggle="collapse" data-bs-target="#answer-two">
+                Question two
+             </button>
+          </h5>
+          <div class="accordion-collapse collapse px-4 py-3" id="answer-two" data-bs-parent="#bt-fq">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nesciunt non accusamus. Fugit incidunt cumque velit perspiciatis eaque qui voluptate recusandae fuga alias assumenda optio, tenetur provident inventore possimus voluptatibus! Eius possimus voluptate accusantium magni exercitationem nobis quidem! Laboriosam, ipsam voluptate rerum, sit nemo velit voluptatem quis eius exercitationem optio repellat. Sit voluptatum voluptas veniam at ipsam, mollitia voluptatem explicabo!
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="question-three">
+             <button class="accordion-button collapsed" type="button" 
+                     data-bs-toggle="collapse" data-bs-target="#answer-three">
+                Question three
+             </button>
+          </h5>
+          <div class="accordion-collapse collapse px-4 py-3" id="answer-three" data-bs-parent="#bt-fq">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, ut? Dolor, veniam!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+
+  <footer class="py-4 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">
+        Copyright &copy; 2022 Medjkane Ahsene
+      </p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-3">
+        <i class="bi bi-arrow-up-circle h2"></i>
+      </a>
+
+    </div>
+  </footer>
+
+
+    
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="scrypt.js"></script>
+    <script src="aapp.js"></script>
+</body>
+</html>
